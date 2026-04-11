@@ -11,7 +11,45 @@
       color: #eef5ff;
       padding: 2rem 1.5rem;
     }
+/* MAIN HEADER */
+.main-header {
+  text-align: center;
+  padding: 1.5rem 0;
+  border-bottom: 2px solid rgba(0, 255, 255, 0.3);
+}
 
+.main-header h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: #0ff;
+  text-shadow: 0 0 10px cyan, 0 0 25px rgba(0,255,255,0.5);
+}
+
+/* BIG RECTANGLE PROFILE IMAGE */
+.hero-photo-lg {
+  width: 220px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 10px; /* rectangle, not circle */
+  border: 2px solid #0ff;
+  box-shadow: 0 0 15px cyan;
+}
+
+/* ADJUST HERO SECTION */
+.hero-mini {
+  align-items: center;
+  gap: 2rem;
+}
+.hero-mini {
+  display: flex;
+  justify-content: space-between; /* pushes items apart */
+  align-items: center;
+}
+
+.hero-text {
+  flex: 1;
+}
     /* main neon container - fusion design */
     .portfolio {
       max-width: 1200px;
@@ -448,4 +486,13 @@ a {
   font-size: 40px;
   color: white;
   text-decoration: none;
+}
+.gallery-caption strong {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.gallery-caption {
+  line-height: 1.6;
 }
