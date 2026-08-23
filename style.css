@@ -116,7 +116,7 @@
     }
 
     /* headings neon style */
-    h2 {
+    h1, h2 {
       font-size: 1.6rem;
       font-weight: 600;
       margin-bottom: 1.2rem;
@@ -154,7 +154,7 @@
       background: rgba(0, 255, 255, 0.12);
       padding: 0.7rem 1rem;
       border-radius: 1rem;
-      display: inline-block;
+      display: block;
       margin: 0.5rem 0;
       border-left: 3px solid #0ff;
     }
@@ -163,6 +163,12 @@
       color: #7df9ff;
       text-decoration: none;
       font-weight: 500;
+    }
+
+    .job-link p {
+      font-size: 0.8rem;
+      margin-top: 0.4rem;
+      opacity: 0.85;
     }
 
     hr {
@@ -377,11 +383,26 @@
   box-shadow: 0 0 10px rgba(0,255,255,0.2);
 }
 
-.pdf-viewer iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
-}
+    .pdf-viewer iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .pdf-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin: 0.75rem 0 1rem;
+    }
+
+    .pdf-actions .btn {
+      margin-top: 0;
+    }
+
+    @media (max-width: 700px) {
+      .pdf-viewer { height: 70vh; min-height: 420px; }
+    }
 
 a {
   text-decoration: none;
